@@ -1,6 +1,6 @@
 # IP Search App
 
-A Flutter application that allows users to search for IP address information.
+A Flutter application that allows users to search for IP address information AUTOR SHANEXON ORTIZ
 
 ## Getting Started
 
@@ -22,5 +22,8 @@ flutter run -d web-server
 
 flutter build web
 
+### URL SITE 
+
+https://67b62309ffe9ae70e0a66656--beamish-crumble-ada55c.netlify.app
 
 ```
