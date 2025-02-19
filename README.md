@@ -1,16 +1,26 @@
-# ip_query_app
+# IP Search App
 
-A new Flutter project.
+A Flutter application that allows users to search for IP address information.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
+- Flutter SDK
+- A web browser (Chrome, Safari, or Firefox)
 
-A few resources to get you started if this is your first Flutter project:
+### Running the Web Version
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Enable web support in Flutter (if not already enabled):
+```bash
+flutter config --enable-web
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Running the App
+
+flutter run -d web-server 
+
+### TO BUILD IN WEB 
+
+flutter build web
+
+
+```

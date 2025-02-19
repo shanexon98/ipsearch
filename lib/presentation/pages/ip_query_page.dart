@@ -121,7 +121,7 @@ class _IpQueryPageState extends State<IpQueryPage> with SingleTickerProviderStat
             TextField(
               controller: _ipController,
               decoration: InputDecoration(
-                labelText: 'Enter IP Address',
+                labelText: 'Enter IP Addressss',
                 hintText: 'e.g. 1.1.1.1',
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15),
@@ -144,6 +144,27 @@ class _IpQueryPageState extends State<IpQueryPage> with SingleTickerProviderStat
                 ),
               ),
               onSubmitted: (_) => _queryIp(),
+            ),
+            SizedBox(height: 20,),
+             ElevatedButton.icon(
+              onPressed: () async {
+                try {
+                 _queryIp();
+                } catch (e) {
+                 
+                }
+              },
+              icon: const Icon(Icons.my_location, color: Colors.white,),
+              label: const Text('Search'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Theme.of(context).colorScheme.secondary,
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                elevation: 3,
+              ),
             ),
             const SizedBox(height: 20),
             if (_isLoading)
